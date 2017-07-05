@@ -26,7 +26,6 @@ int main() {
 	double max_yaw_error = 0.05; // Max allowable yaw error [rad]
 
 
-
 	// Start timer.
 	int start = clock();
 	
@@ -77,6 +76,7 @@ int main() {
 	double total_error[3] = {0,0,0};
 	double cum_mean_error[3] = {0,0,0};
 	
+	cout << "\nnum_time_steps : " << num_time_steps << endl;
 	for (int i = 0; i < num_time_steps; ++i) {
 		cout << "Time step: " << i << endl;
 		// Read in landmark observations for current time step.
